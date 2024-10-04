@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katherine Silva Monrroi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/40ae331c4a.js" crossorigin="anonymous"></script>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__brand">
+        <a href="#" class="logo"><img src="./assets/img/ksm-logo.png" alt="logo" /></a>
+      </div>
+      <div class="navbar__toggle" id="navbarToggle">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navbar__links" id="navbarLinks">
+        <ul>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Header -->
+  <header class="hero">
+    <div class="hero__content">
+      <h1>Katherine Silva Monrroi</h1>
+      <img src="./assets/img/ksm-logo.png" alt="" style="width: 40%; height: auto;">
+      <a href="#projects" class="btn">Learn more</a>
+    </div>
+
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section projects">
+    <h2 class="toggle">My Projects</h2>
+    <div class="projects__grid">
+
+      <div class="project"
+        onclick="redirectToDetail('onlyflans', './assets/img/onlyflans.jpeg', ' The project involves creating a web application for a small business specializing in dessert sales. The app allows unregistered users to access the main page, showcasing the delicious offerings. Additionally, there is a secure URL that can only be accessed by registered users, providing them with exclusive content and features. This setup not only enhances user engagement but also encourages customers to register for a more personalized experience while exploring the world of delectable desserts.', ['Javascript', 'Css animations', 'Bootstrap'])">
+
+        <div class="card-body">
+          <h3>ONLYFLANS</h3>
+          <p>
+            The project involves creating a web application for a small business specializing in dessert sales...</p>
+          <a href="#" class="btn">View Project</a>
+        </div>
+      </div>
+
+
+      <div class="project"
+        onclick="redirectToDetail('Suricata', './assets/img/suricata.png', 'I developed a food delivery application that features a variety of dishes displayed in expandable cards. This user-friendly platform allows customers to easily browse through different meal options, view details, and place orders with just a few clicks. With a focus on convenience and accessibility, the app aims to enhance the dining experience by bringing delicious food right to users doors, making it easier than ever to enjoy a great meal at home.', ['Javascript', 'Css animations', 'Bootstrap'])">
+        <h3>SURICATA</h3>
+        <p>I developed a food delivery application that features a variety of dishes displayed in expandable cards...
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+
+      <div class="project"
+        onclick="redirectToDetail('Mysite', './assets/img/mysite.png', 'I created an application designed for renting properties, where users can browse available homes for lease. This platform features a user-friendly interface that allows potential renters to filter and review listings based on their preferences. It incorporates an SQL database to efficiently manage property information and user data. The app aims to simplify the rental process, making it easier for users to find their ideal home while providing property owners with a streamlined way to showcase their listings. ', ['Javascript', 'Css animations', 'Bootstrap', 'Postgres'])">
+        <h3>Mysite</h3>
+        <p>
+          I created an application designed for renting properties, where users can browse available homes for lease...
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project"
+        onclick="redirectToDetail('Viajes Chile', './assets/img/viajeschile.png', 'I developed a landing page for a travel agency. This page showcases the agency’s services and destinations, designed to engage visitors with eye-catching visuals and compelling content. With a user-friendly layout,  potential clients can easily navigate through travel packages, special offers, and contact information. The landing page aims to attract new customers and enhance the agencys online  presence, making it easier for travelers to start planning their next adventure.', ['Javascript', 'Css animations', 'Bootstrap'])">
+        <h3>Viajes Chile</h3>
+        <p>I developed a landing page for a travel agency. This page showcases the agency’s services and destinations...
+        </p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+      <div class="project"
+        onclick="redirectToDetail('Ricomida', './assets/img/ricomida.png', 'I developed a web application called Ricomida. This platform allows users to discover a variety of           delicious recipes tailored to their preferences. With an intuitive interface, users can browse, save, and           customize recipes while receiving weekly email subscriptions featuring new recipes and cooking tips. The app aims to inspire home cooks and simplify meal planning, making it easier for anyone to explore and enjoy the culinary arts', ['Javascript', 'Css animations', 'Bootstrap'])">
+        <h3>Ricomida</h3>
+        <p>I developed a web application called "Ricomida." This platform allows users to discover a variety of
+          delicious recipes tailored to their preferences...</p>
+        <a href="#" class="btn">View Project</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills">
+    <h2 class="toggle">Skills</h2>
+    <div class="skills__list">
+
+      <div class="skill">
+        <h3>Design</h3>
+        <p>
+          I have a strong foundation in design, particularly with canvas and drawing techniques. My experience includes
+          creating digital illustrations and leveraging AI technologies to generate stunning images. I enjoy exploring
+          the intersection of creativity and technology, using AI image generators to enhance my design projects. This
+          unique blend of skills allows me to bring innovative ideas to life and push the boundaries of traditional
+          design.
+        </p>
+      </div>
+      <div class="skill">
+        <h3>Curiosity</h3>
+        <p>
+          My curiosity drives me to explore a wide range of creative skills. This enthusiasm has led me to learn 3D
+          printing, stamp making, sculpture, drawing, video editing, web development, and carpentry. I love diving into
+          new techniques and technologies, constantly seeking to expand my knowledge and push my creative boundaries.
+          Each new skill adds a layer to my artistic expression, allowing me to bring my ideas to life in diverse and
+          innovative ways.
+        </p>
+      </div>
+      <div class="skill">
+        <h3>Team working</h3>
+        <p>
+
+          I thrive in collaborative environments and genuinely enjoy working in teams. I believe that the best ideas
+          come from sharing diverse perspectives, and I’m always eager to contribute my skills while learning from
+          others. I also have a passion for teaching; whether it’s sharing knowledge or helping teammates grow, I find
+          great fulfillment in empowering others. Together, we can achieve amazing things!
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <h2 class="toggle">About Me</h2>
+    <div class="text_about">
+      <p>
+        I am an English teacher and a graduate in English Literature, with over 14 years of experience in teaching.
+        Recently, I’ve taken an exciting turn in my career by diving into web development. I am learning to use tools
+        like Visual Studio Code, Django, and Python, incorporating databases into my projects. I am passionate about
+        every aspect of programming and I deeply enjoy creating and customizing solutions that reflect my style and
+        creativity. I’m excited to combine my language skills with the digital world and look forward to exploring this
+        new professional facet.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+
+    <a href="contact.html" class="btn">Send a Message</a>
+
+    <div>
+      <img id="contact_pic" src="./assets/img/contact.png" alt="">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Katherine Silva Monrroi | Portfolio</p>
+  </footer>
+
+  <script>
+    // Botón hamburguesa navbar function
+
+    const toggleButton = document.getElementById("navbarToggle");
+    const navbarLinks = document.getElementById("navbarLinks");
+
+    toggleButton.addEventListener("click", () => {
+      // Añadir o remover la clase 'active' al contenedor de los enlaces
+      navbarLinks.classList.toggle("active");
+    });
+
+    console.log("IN SCRIPTS")
+    // RE-DIRECT to DETAIL card project
+    function redirectToDetail(
+      title,
+      image,
+      description,
+      technologies,
+      github,
+      demo
+    ) {
+      const techString = JSON.stringify(technologies);
+      window.location.href = `detail_project.html?title=${encodeURIComponent(
+        title
+      )}&image=${encodeURIComponent(
+        image
+      )}&description=${encodeURIComponent(
+        description
+      )}&technologies=${encodeURIComponent(
+        techString
+      )}&github=${encodeURIComponent(github)}&demo=${encodeURIComponent(
+        demo
+      )}`;
+    }
+    document.querySelectorAll('.toggle').forEach(item => {
+      item.addEventListener('click', event => {
+          const content = item.nextElementSibling; // Selecciona el siguiente elemento que es el contenido
+          content.classList.toggle('expanded'); // Alternar la clase 'expanded'
+      });
+  });
+
+  </script>
+</body>
+
+</html>

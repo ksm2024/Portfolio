@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Katherine Silva Monrroi</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+  <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/40ae331c4a.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <div class="navbar__brand">
+        <a href="index.html" class="logo"><i class="fa-solid fa-house"
+            style="color:pink; font-size: 3rem; margin-left:1rem"></i></a>
+      </div>
+
+    </div>
+  </nav>
+
+  <!-- Project Detail Section -->
+  <section id="project-detail" class="section project-detail">
+    <div class="project-detail__content">
+      <h2 id="project-title"></h2>
+      <div class="project-detail__image">
+        <img id="project-image" src="" alt="Project Image" style="width: 100%;" />
+      </div>
+      <div class="project-detail__description">
+        <p id="project-description"></p>
+        <ul id="project-technologies" class="project-detail__technologies"></ul>
+        <div class="project-detail__links">
+          <a id="github-link" href="https://github.com/ksm2024" target="_blank" class="btn">GitHub</a>
+          <a id="live-demo-link" href="index.html" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 Katherine Silva Monrroi | Portfolio</p>
+  </footer>
+
+  <script>
+
+    // RE-DIRECT to DETAIL card project
+    // Obtener los parámetros de la URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const title = urlParams.get("title");
+    const image = urlParams.get("image");
+    const description = urlParams.get("description");
+    const technologies = JSON.parse(urlParams.get("technologies"));
+    const github = urlParams.get("github");
+    const demo = urlParams.get("demo");
+
+    // Asignar los valores a los elementos del DOM
+    document.getElementById("project-title").innerText = title;
+    document.getElementById("project-image").src = image;
+    document.getElementById("project-description").innerText = description;
+
+    // Añadir las tecnologías a la lista
+    const techList = document.getElementById("project-technologies");
+    technologies.forEach((tech) => {
+      const li = document.createElement("li");
+      li.innerText = tech;
+      techList.appendChild(li);
+    });
+
+    // Asignar los enlaces
+    //   document.getElementById("github-link").href = github;
+    //   document.getElementById("live-demo-link").href = demo;
+  </script>
+</body>
+
+</html>
